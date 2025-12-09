@@ -1,0 +1,49 @@
+services:
+  - type: web
+    name: sentinelops-nexus-backend
+    env: python
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: "./build.sh"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    rootDir: backend
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: MONGODB_URL
+        sync: false
+      - key: MONGODB_DB_NAME
+        value: sentinel_ops_nexus
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALGORITHM
+        value: HS256
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: 1440
+      - key: DEBUG
+        value: False
+      - key: APP_NAME
+        value: SentinelOps Nexus
+      - key: APP_VERSION
+        value: 1.0.0
+      - key: AI_PROVIDER
+        value: ollama
+      - key: OLLAMA_BASE_URL
+        value: http://localhost:11434
+      - key: OLLAMA_MODEL
+        value: llama3.2:3b
+      - key: UPLOAD_DIR
+        value: /opt/render/project/src/uploads
+      - key: MAX_FILE_SIZE
+        value: 10485760
+      - key: CORS_ORIGINS
+        value: '["https://your-frontend-url.vercel.app"]'
+      - key: DEFAULT_ADMIN_USERNAME
+        value: red_ranger
+      - key: DEFAULT_ADMIN_PASSWORD
+        sync: false
+      - key: DEFAULT_ADMIN_FULLNAME
+        value: Red Ranger - Team Leader
+      - key: QR_TOKEN_LENGTH
+        value: 32
