@@ -51,7 +51,6 @@ env/
 *.sqlite3
 mongodb.log
 db/
-database/
 *.wt
 WiredTiger.lock
 diagnostic.data/

@@ -21,7 +21,6 @@ build/
 *.db
 *.sqlite
 *.sqlite3
-/database/
 /db/
 mongodb.log
 *.wt
