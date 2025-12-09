@@ -1,0 +1,54 @@
+# Web Framework & Server
+fastapi
+uvicorn[standard]
+
+# Data Validation & Settings
+pydantic
+pydantic-settings
+email-validator
+
+# Database - MongoDB Async Driver
+motor
+pymongo
+
+# API Request/Response Handling
+python-multipart
+httpx
+aiofiles
+
+# Authentication & Security
+python-jose
+cryptography
+passlib[argon2]>=1.7.4
+argon2-cffi>=21.3.0
+qrcode
+PyPDF2
+pdf2image
+pytesseract
+Pillow
+
+# AI/ML & Vector Database
+# Using Ollama (no additional dependencies needed, runs locally)
+langchain
+langchain-core
+chromadb
+requests  # For Ollama API calls
+
+# Phase 3: 2FA & Biometric
+pyotp>=2.9.0
+# For biometric: libfaceapi, deepface, etc. (integrate as needed)
+
+# Phase 4: Notifications & WebSocket
+websockets
+aiosmtplib
+
+# Data Export
+openpyxl
+pandas
+
+# Environment & Configuration
+python-dotenv
+
+# Additional utilities
+typing-extensions
+pyotp
