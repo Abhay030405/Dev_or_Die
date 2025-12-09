@@ -22,7 +22,7 @@ async def connect_to_mongo():
     """Establish connection to local MongoDB"""
     try:
         # Simple connection to local MongoDB (no SSL)
-        db.client = AsyncIOMotorClient(settings.MONGODB_URL)
+        db.client = AsyncIOMotorClient(settings.MONGODB_URL, tls=True, tlsAllowInvalidCertificates=True)
         db.db = db.client[settings.MONGODB_DB_NAME]
         
         # Test connection
