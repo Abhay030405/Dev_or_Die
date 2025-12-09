@@ -1,0 +1,11 @@
+What to implment in the frontend :
+
+For Admin 
+1. when admin open the knoledge crystal add the buttoh at the corner and below the nav bar to upload the document and open a form with some details 1. Short description 2. The file is for agent or for techician 3. Upload the file(txt, pdf , jng etc) 
+2. When the file is added redirect to the original page 
+3. Add the search bar on the left side of the page where admin or agent or techician can search for the uploaded documnets
+4. Show the documnet in the form of the cards with 3 card in each row the card must have the title of the 1. tilte of the documnet 2. Delete button 3. DownLoad button
+5. At the bottom left of the page give the option to chat with the AI (in the form of the button whne click on it a screen pop out through which we can chat)which have all the data of all the uploaded files and we can ask about any file from file and he can tell me 
+
+for Agent  / Techician
+1. They cant upload the document except this button implmnt all the thigs same as the admin one 
